@@ -43,7 +43,7 @@ print "newly generated formToken is " . $formToken . " <br>\n";
 
 <!-- payment button HTML code -->
 <div class="kr-checkout"></div>
-<script src="<?php echo $client->getEndPoint();?>/static/js/krypton-client/V3/stable/kr.min.js?formToken=<?php echo $formToken;?>"
+<script src="<?php echo $client->getEndPoint();?>/static/js/krypton-client/V3/stable/krypton-payment-form.min.js?formToken=<?php echo $formToken;?>"
     kr-public-key="<?php echo $client->getPublicKey();?>"
     kr-post-url="paid.php"
     kr-shop-name="My company"
